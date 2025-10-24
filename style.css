@@ -91,10 +91,11 @@ footer {
   footer {
     font-size: 12px;
   }
-}
+
 .menu-image img {
   width: 100%;
   height: auto;
   margin-top: 10px;
   border-radius: 8px;
+
 }
