@@ -50,3 +50,51 @@ footer {
   padding: 10px;
   border-top: 1px solid #00ffcc;
 }
+/* 반응형 디자인: 화면 너비에 따라 메뉴와 본문 스타일 조정 */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro, .timeline {
+    padding: 20px;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2, h3 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .intro p {
+    font-size: 13px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+.menu-image img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
