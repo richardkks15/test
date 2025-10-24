@@ -92,6 +92,12 @@ footer {
     font-size: 12px;
   }
 
+.title-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
 
 
 
