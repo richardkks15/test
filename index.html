@@ -11,22 +11,57 @@
   <!-- 스타일시트 -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- 사이트 아이콘 (박물관 일러스트 느낌) -->
-  <link rel="icon" type="images/png" href="images/musium.png">
+  <!-- 사이트 아이콘 -->
+  <link rel="icon" type="image/png" href="images/musium.png">
 </head>
 <body>
   <header>
     <div class="logo-title">
-    <img src="images/musium.png" alt="해킹 역사 박물관 로고" id="site-logo">
-    <h1 id="site-title">해킹 역사 박물관</h1>
-  </div>
+      <img src="images/musium.png" alt="해킹 역사 박물관 로고" id="site-logo">
+      <h1 id="site-title">해킹 역사 박물관</h1>
+    </div>
+
     <nav aria-label="주요 메뉴">
       <ul>
-        <li><a href="#chronology">해킹 연대기</a></li>
-        <li><a href="#techniques">해킹 기법</a></li>
-        <li><a href="#security">보안 기술</a></li>
-        <li><a href="#media">미디어관</a></li>
-        <li><a href="#incidents">최근 사건관</a></li>
+        <li>
+          <a href="#chronology">해킹 연대기</a>
+          <ul class="dropdown">
+            <li><a href="#1960s">1960~70년대</a></li>
+            <li><a href="#1980s">1980~90년대</a></li>
+            <li><a href="#2000s">2000년대 이후</a></li>
+            <li><a href="#cases">대표 사건</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#techniques">해킹 기법</a>
+          <ul class="dropdown">
+            <li><a href="#phishing">피싱</a></li>
+            <li><a href="#ransomware">랜섬웨어</a></li>
+            <li><a href="#sql">SQL 인젝션</a></li>
+            <li><a href="#ddos">DDoS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#security">보안 기술</a>
+          <ul class="dropdown">
+            <li><a href="#2fa">이중인증(2FA)</a></li>
+            <li><a href="#ids">IDS/IPS</a></li>
+            <li><a href="#ai">AI 기반 탐지</a></li>
+            <li><a href="#blockchain">블록체인</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#media">미디어관</a>
+          <ul class="dropdown">
+            <li><a href="#movies">영화</a></li>
+            <li><a href="#dramas">드라마</a></li>
+            <li><a href="#games">게임</a></li>
+            <li><a href="#art">해커 예술</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#incidents">최근 사건관</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -36,13 +71,23 @@
       <h2 id="intro-heading">정보보안의 과거, 현재, 미래</h2>
       <p>해킹의 역사와 보안 기술을 소개하는 교육형 웹사이트입니다.</p>
     </section>
+
+    <!-- 블로그 포스팅 형식의 최근 사건관 -->
+    <section id="incidents" class="blog">
+      <h2>최근 사건관</h2>
+      <article>
+        <h3>2025년 글로벌 랜섬웨어 공격</h3>
+        <p>2025년 초, 전 세계 주요 기업을 대상으로 대규모 랜섬웨어 공격이 발생했습니다...</p>
+      </article>
+      <article>
+        <h3>AI 기반 피싱 탐지 실패 사례</h3>
+        <p>AI 탐지 시스템을 우회한 정교한 피싱 공격이 보고되었습니다...</p>
+      </article>
+    </section>
   </main>
 
   <footer role="contentinfo">
     <p>© <time datetime="2025">2025</time> 해킹 역사 박물관</p>
   </footer>
 </body>
-
 </html>
-
-
