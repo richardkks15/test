@@ -20,28 +20,53 @@ nav ul {
   gap: 20px;
 }
 
+nav ul li {
+  position: relative;
+}
+
 nav a {
-  color: #00ffcc;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.1rem;
   text-decoration: none;
-  font-weight: bold;
+  color: #fbfbfb;
+  padding: 8px 12px;
+  display: block;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* 드롭다운 숨기기 */
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1a1a;
+  border: 1px solid #00ffcc;
+  list-style: none;
+  padding: 0;
+  min-width: 160px;
+  z-index: 1000;
 }
 
-.intro {
-  padding: 40px;
-  text-align: center;
+nav ul li .dropdown li a {
+  padding: 10px;
+  color: #00ffcc;
 }
 
-.timeline {
-  padding: 20px 40px;
+/* 마우스 올리면 드롭다운 표시 */
+nav ul li:hover .dropdown {
+  display: block;
 }
 
-.timeline ul {
-  list-style: square;
-  padding-left: 20px;
+/* 블로그 포스팅 스타일 */
+.blog article {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #00ffcc;
+  border-radius: 8px;
+}
+.blog h3 {
+  color: #00ffcc;
 }
 
 footer {
@@ -135,6 +160,7 @@ body, p, h2 {
     font-size: 12px;
   }
 }
+
 
 
 
