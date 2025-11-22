@@ -55,6 +55,7 @@ footer {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 3rem;
   text-align: center;
+  color: #00ffcc;
   margin: 20px 0;
 }
 
@@ -70,14 +71,14 @@ nav a {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 1.1rem;
   text-decoration: none;
-  color: #333;
+  color: #fbfbfb;
 }
 
 /* 본문: 나눔명조 */
 body, p, h2 {
   font-family: 'Nanum Myeongjo', serif;
   line-height: 1.6;
-  color: #222;
+  color: #f5f5f5;
 }
 
 /* 반응형 디자인: 화면 너비에 따라 메뉴와 본문 스타일 조정 */
@@ -122,6 +123,7 @@ body, p, h2 {
     font-size: 12px;
   }
 }
+
 
 
 
