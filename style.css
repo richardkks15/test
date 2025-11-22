@@ -51,6 +51,20 @@ footer {
   border-top: 1px solid #00ffcc;
 }
 /* 사이트 제목: Nanum Pen Script */
+/* 로고 + 제목을 가로 정렬 */
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 가운데 정렬 */
+  gap: 10px; /* 로고와 제목 사이 간격 */
+  margin: 20px 0;
+}
+
+/* 로고 크기 */
+#site-logo {
+  width: 60px;
+  height: auto;
+
 #site-title {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 3rem;
@@ -123,6 +137,7 @@ body, p, h2 {
     font-size: 12px;
   }
 }
+
 
 
 
